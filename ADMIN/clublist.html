@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>THE NEW SCHOOL CLUBS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="javascript">
+        function Delete(){
+            let res = confirm("Are you sure you want to delete this Club !");
+            if(res){
+                alert("Club Deleted .");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2>THE NEW SCHOOL <span class="green">.</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashbord.html" ><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="clublist.html" class="active"><span class="las la-clubs"></span>
+                    <span>Club List</span></a>
+                </li>
+
+                <li>
+                    <a href="addclub.html"><span class="las la-add"></span>
+                    <span>Add Club</span></a>
+                </li>
+
+                <li>
+                    <a href=""><span class="las la-modify"></span>
+                    <span>Modify Club</span></a>
+                </li>
+
+                <li>
+                    <a href=""><span class="las la-users"></span>
+                    <span>Pupils</span></a>
+                </li>
+
+                <li>
+                    <a href="login.html"><span class="las la-logout"></span>
+                    <span>Log out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header id="header1">
+            <div class="header-title">
+                <h1>
+                    <label for="">
+                        <span class="las la-bars"></span>
+                    </label>
+
+                    Club List
+                </h1>
+            </div>
+                <div class="search-wrapper">
+                    
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="search here" />
+                </div>
+
+                <div class="user-wrapper">
+                    <img src="admin.jpg" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Semer Belghith</h4>
+                        <small>first admin</small>
+                    </div>
+                </div>
+            
+        </header>
+        <main>
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Clubs</h3>
+                            
+                            <button><a href =addclub.html>Add</a></button>
+                        </div>
+                        <div class="card-body">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>Club Name</td>
+                                        <td>Participant</td>
+                                        <td>Date & Time</td>
+                                        <td>Local</td>
+                                        <td>Responsible</td>
+                                        <td>Num</td>
+                                        <td>Cost</td>
+                                        <td>Modify</td>
+                                        <td>Remove</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Soccer Club</td>
+                                        <td>4 ,5 & 6</td>
+                                        <td>Friday 4:00-4:50</td>
+                                        <td>Playground 1</td>
+                                        <td>Hassine Ilyese</td>
+                                        <td>23096100</td>
+                                        <td>30dt</td>
+                                        <td>
+                                            <a href="modifyclub.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>BascketBall Club</td>
+                                        <td>5 & 6</td>
+                                        <td>Wednesday 3:35-4:25</td>
+                                        <td>Playground 2</td>
+                                        <td>Belghith Semer</td>
+                                        <td>28194715</td>
+                                        <td>30dt</td>
+                                        <td>
+                                            <a href="ccc.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dance Club</td>
+                                        <td>All Years</td>
+                                        <td>Friday 5:00-5:50</td>
+                                        <td>C20</td>
+                                        <td>Molka Aouini</td>
+                                        <td>22132468</td>
+                                        <td>35dt</td>
+                                        <td>
+                                            <a href="ccc.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Theatre Club</td>
+                                        <td>all years</td>
+                                        <td>Saturday 5:00-5:50</td>
+                                        <td>C20</td>
+                                        <td>Hassine Youssef</td>
+                                        <td>25785154</td>
+                                        <td>35dt</td>
+                                        <td>
+                                            <a href="ccc.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Events</h3>
+                            
+                            <button>Add</button>
+                        </div>
+                        <div class="card-body">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>Event Name</td>
+                                        <td>Description</td>
+                                        
+                                        <td>Modify</td>
+                                        <td>Remove</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Koffa Ramadhan</td>
+                                        <td>The new school organize a charity act to help people in Ramadhane</td>
+                                        
+                                        <td>
+                                            <a href="ccc.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ending Party</td>
+                                        <td>As every year the new school organise a party in the ending of the second term.</td>
+                                        
+                                        <td>
+                                            <a href="ccc.html"> <i style="font-size:24px" class="fa">&#xf044;</i></a>
+                                        </td>
+                                        <td>
+                                            <a href=""><i style="font-size:24px" class="fa" onclick="Delete();">&#xf00d;</i></a>
+                                        </td>
+                                    </tr>
+                                    
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>

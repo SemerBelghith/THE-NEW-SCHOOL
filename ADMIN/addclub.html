@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEW SCHOOL ADDCLUB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        td{
+        padding: .8rem;
+        font-size: .7rem;
+        color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2>THE NEW SCHOOL <span class="green">.</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashbord.html" ><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="clublist.html"><span class="las la-clubs"></span>
+                    <span>Club List</span></a>
+                </li>
+
+                <li>
+                    <a href="addclub.html" class="active"><span class="las la-add"></span>
+                    <span>Add Club</span></a>
+                </li>
+
+                <li>
+                    <a href=""><span class="las la-modify"></span>
+                    <span>Modify Club</span></a>
+                </li>
+
+                <li>
+                    <a href=""><span class="las la-users"></span>
+                    <span>Pupils</span></a>
+                </li>
+
+                <li>
+                    <a href="login.html"><span class="las la-logout"></span>
+                    <span>Log out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header id="header1">
+            <div class="header-title">
+                <h1>
+                    <label for="">
+                        <span class="las la-bars"></span>
+                    </label>
+
+                    Add Club
+                </h1>
+            </div>
+                <div class="search-wrapper">
+                    
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="search here" />
+                </div>
+
+                <div class="user-wrapper">
+                    <img src="admin.jpg" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Semer Belghith</h4>
+                        <small>first admin</small>
+                    </div>
+                </div>
+        </header>
+        <main>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Add a new club</h3>
+                            
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <table width="100%">
+                                    <tr>
+                                        <td>Club Name</td>
+                                        <td><input type="text" placeholder="club name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Participant</td>
+                                        <td><select type="checkbox"  multiple required>
+                                            <option>All years</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select><br><p>(Note * Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date & Time</td>
+                                        <td>
+                                            <select required>
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                            </select>
+                                            <input type="time" id="appt" name="appt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Local</td>
+                                        <td><select required>
+                                            <option>Playground 1</option>
+                                            <option>Playground 2</option>
+                                            <option>C 20</option>
+                                        </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Responsible</td>
+                                        <td><input type="text" placeholder="name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Num</td>
+                                        <td><input type="number" placeholder="11 222 333" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Coast (en DT)</td>
+                                        <td><input type="number" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Import pictures</td>
+                                        <td>
+                                            <input type="image" src="input-img.PNG" alt="Submit" width="24" height="24" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button type="reset" class="no">Reset .</button>
+                                            <button type="submit" class="yes" onclick="Create();">Create</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </main>
+        <script src="fn.js"></script>
+</body>
+</html>
